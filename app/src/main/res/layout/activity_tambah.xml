@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/activity_tambah"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context="id.harvest.stmik.proyek3.TambahActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/activity_tambah_judul"
+        android:id="@+id/lblJudulTambah"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/lblNama"
+        android:text="@string/activity_tambah_hintNama"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/lblJudulTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/lblAlamat"
+        android:text="@string/activity_tambah_hintAlamat"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:id="@+id/tvAlamat"
+        android:layout_below="@+id/lblAlamat"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:hint="@string/activity_tambah_hintAlamat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/activity_tambah_hintNama"
+        android:id="@+id/tvNama"
+        android:layout_below="@+id/lblNama"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_tambah_lblButton_tambah"
+        android:id="@+id/btnTambah"
+        android:layout_below="@+id/tvAlamat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnBatal"
+        android:text="@string/activity_tambah_lblButton_batal"
+        android:layout_below="@+id/tvAlamat"
+        android:layout_toLeftOf="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

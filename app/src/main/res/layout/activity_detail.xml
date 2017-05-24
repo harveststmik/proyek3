@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.harvest.stmik.proyek3.DetailActivity">
+
+    <ImageView
+        android:maxHeight="150dp"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:maxWidth="150dp"
+        android:layout_marginTop="@dimen/general_margin"
+        android:layout_below="@+id/lbl_activity_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:padding="@dimen/general_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_detail"
+        android:id="@+id/lbl_activity_detail_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorAccent"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNama_detail"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/txtAlamatDetail"
+        android:layout_below="@+id/txtNama_detail"
+        android:layout_alignLeft="@+id/txtNama_detail"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:text="Tutup"
+        android:layout_alignLeft="@+id/txtAlamatDetail"
+        android:layout_below="@+id/txtAlamatDetail"
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Update"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/btnClose"
+        android:layout_below="@+id/txtAlamatDetail"
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
